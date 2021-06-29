@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/processdef">
+  <process id="mailTask" name="mailTask" isExecutable="true">
+    <documentation>mailTask</documentation>
+    <startEvent id="startEvent1"></startEvent>
+    <serviceTask id="sid-6E92C04C-97B6-4932-9922-BEFFE4237082" activiti:type="mail">
+      <extensionElements>
+        <activiti:field name="to">
+          <activiti:string><![CDATA[614833498@qq.com]]></activiti:string>
+        </activiti:field>
+        <activiti:field name="from">
+          <activiti:string><![CDATA[3623509067@qq.com]]></activiti:string>
+        </activiti:field>
+        <activiti:field name="subject">
+          <activiti:string><![CDATA[holla mears]]></activiti:string>
+        </activiti:field>
+        <activiti:field name="text">
+          <activiti:string><![CDATA[裸聊+v 7977204636]]></activiti:string>
+        </activiti:field>
+      </extensionElements>
+    </serviceTask>
+    <sequenceFlow id="sid-367AA153-0ABB-42D2-B4C5-0C0E804CF958" sourceRef="startEvent1" targetRef="sid-6E92C04C-97B6-4932-9922-BEFFE4237082"></sequenceFlow>
+    <endEvent id="sid-E982764B-63B6-485C-B56A-44C060AFBD43"></endEvent>
+    <sequenceFlow id="sid-E8912CF8-3892-4B64-A0EB-A28E1083DF27" sourceRef="sid-6E92C04C-97B6-4932-9922-BEFFE4237082" targetRef="sid-E982764B-63B6-485C-B56A-44C060AFBD43"></sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_mailTask">
+    <bpmndi:BPMNPlane bpmnElement="mailTask" id="BPMNPlane_mailTask">
+      <bpmndi:BPMNShape bpmnElement="startEvent1" id="BPMNShape_startEvent1">
+        <omgdc:Bounds height="30.0" width="30.0" x="100.0" y="163.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-6E92C04C-97B6-4932-9922-BEFFE4237082" id="BPMNShape_sid-6E92C04C-97B6-4932-9922-BEFFE4237082">
+        <omgdc:Bounds height="80.0" width="100.0" x="196.0" y="137.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-E982764B-63B6-485C-B56A-44C060AFBD43" id="BPMNShape_sid-E982764B-63B6-485C-B56A-44C060AFBD43">
+        <omgdc:Bounds height="28.0" width="28.0" x="345.0" y="163.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="sid-E8912CF8-3892-4B64-A0EB-A28E1083DF27" id="BPMNEdge_sid-E8912CF8-3892-4B64-A0EB-A28E1083DF27">
+        <omgdi:waypoint x="296.0" y="177.0"></omgdi:waypoint>
+        <omgdi:waypoint x="345.0" y="177.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-367AA153-0ABB-42D2-B4C5-0C0E804CF958" id="BPMNEdge_sid-367AA153-0ABB-42D2-B4C5-0C0E804CF958">
+        <omgdi:waypoint x="129.99956298163056" y="177.8854995192242"></omgdi:waypoint>
+        <omgdi:waypoint x="196.0" y="177.38167938931298"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
