@@ -6,7 +6,7 @@
     <serviceTask id="sid-6E92C04C-97B6-4932-9922-BEFFE4237082" activiti:type="mail">
       <extensionElements>
         <activiti:field name="to">
-          <activiti:string><![CDATA[614833498@qq.com]]></activiti:string>
+          <activiti:expression>${someProcessVar}</activiti:expression>
         </activiti:field>
         <activiti:field name="from">
           <activiti:string><![CDATA[3623509067@qq.com]]></activiti:string>
@@ -16,6 +16,9 @@
         </activiti:field>
         <activiti:field name="text">
           <activiti:string><![CDATA[裸聊+v 7977204636]]></activiti:string>
+        </activiti:field>
+        <activiti:field name="attachments">
+          <activiti:expression>${attachments}</activiti:expression>
         </activiti:field>
       </extensionElements>
     </serviceTask>
